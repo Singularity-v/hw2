@@ -4,13 +4,8 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 const App = () => {
   return (
     <View style={styles.container}>
-
-      <Image source={require("./imgs/beach.jpg")} />
-      <Text>beach</Text>
-      <Image source={require("./imgs/forest.jpg")} />
-      <Text>forest</Text>
-      <Image source = {require('./imgs/mountain.jpg')} />
-      <Text>mountain</Text>    
+      <Image source={require("./imgs/2.png")} style={{width: 200,height:300}} />
+      <Text >Over the garden wall</Text>        
     </View>
   );
 }
@@ -18,7 +13,7 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#B4CEB3',
     alignItems: 'center',
     justifyContent: 'center',
   },
