@@ -1,10 +1,16 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
-export default function App() {
+const App = () => {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+
+      <Image source={require("./imgs/beach.jpg")} />
+      <Text>beach</Text>
+      <Image source={require("./imgs/forest.jpg")} />
+      <Text>forest</Text>
+      <Image source = {require('./imgs/mountain.jpg')} />
+      <Text>mountain</Text>    
     </View>
   );
 }
@@ -17,3 +23,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App;
